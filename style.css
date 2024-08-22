@@ -1,0 +1,212 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f3eae3;
+}
+
+body{
+    display: flex;
+}
+
+.cont {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;  
+    margin: 0 ;
+    padding-top: 15rem;
+
+}
+
+.cont img {
+    width: 300px;
+    display: block;
+    float: left;
+    transition: transform 0.3s ease-out;
+}
+
+.cont img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.txt {
+    overflow: hidden;
+    background-color: #ffffff;
+    max-width: 280px;
+}
+
+.txt h5, .txt h1, .txt p, .txt h2, .txt span, .txt button {
+    background: transparent;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.txt i {
+    background: transparent;
+    margin-right: 7px;
+}
+
+.txt button {
+    display: block;
+  margin: 10px auto; /* Center the button and add space between them */
+  padding: 10px 20px;
+  width: 250px; /* Optional: Adjust width as needed */
+  border: none;
+  border-radius: 7px;
+  background-color: #3d8168; /* Adjust color as needed */
+  cursor: pointer;
+  font-weight: 600;
+  transition: .2s ease-in-out;
+  color: mintcream;
+}
+
+.txt button:hover {
+    background-color: #1a4031;
+}
+
+.txt h5 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+.txt p {
+    margin-bottom: 2rem;
+    color: gray;
+    font-family: "Roboto", sans-serif;
+}
+
+.txt h2 {
+    font-size: 1.8rem;
+    color: #3a8268;
+    font-weight: bold;
+    font-family: "Simonetta", serif;
+}
+
+.txt h1 {
+    font-family: "Simonetta", serif;
+}
+
+.price {
+    background: transparent;
+    display: inline-flex;
+    align-items: baseline; /* Aligns text along the baseline */
+    margin: 0;
+    margin-bottom: 1.1rem;
+}
+
+.current-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3a8268;
+    font-family: "Simonetta", serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: 14px; /* Adjust size as needed */
+    margin-left: -5px; /* Negative margin to reduce space */
+    position: relative;
+    color: gray;
+    font-weight: 500;
+    right: 47px;
+    top: -9px;
+}
+
+/* Hide the mobile version by default */
+.cont {
+    display: none;
+}
+
+/* For larger screens (desktop) */
+@media only screen and (min-width: 601px) {
+    .cont {
+      display: block;
+        margin: 0 auto;
+    }
+    
+    .cont-mobile {
+      display: none;
+    }
+  }
+
+/* For smaller screens (mobile) */
+@media only screen and (max-width: 600px) {
+    .cont {
+      display: none;
+
+    }
+    
+    .cont-mobile {
+      display: block;
+    }
+
+    .cont-mobile img {
+        margin: 0 auto;
+        padding-top: 15px;
+        width: 370px;
+        padding-top: 4.5rem;
+        margin-left: 4em;
+        margin-right: 3rem;
+    }
+
+    .txt-mobile {
+        overflow: hidden;
+        background-color: #ffffff;
+        margin-top: -2.5px;
+        margin-left: 4rem;
+        margin-right: 3rem;
+        width: 370px;
+    }
+    
+    .txt-mobile h5, .txt-mobile h1, .txt-mobile p, .txt-mobile h2, .txt-mobile span, .txt-mobile button {
+        background: transparent;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    .txt-mobile i {
+        background: transparent;
+        margin-right: 7px;
+    }
+
+    .txt-mobile h1 {
+        font-family: "Simonetta", serif;
+    }
+    
+    
+    .txt-mobile button {
+        display: block;
+      margin: 10px auto; /* Center the button and add space between them */
+      padding: 10px 20px;
+      width: 250px; /* Optional: Adjust width as needed */
+      border: none;
+      border-radius: 7px;
+      background-color: #3d8168; /* Adjust color as needed */
+      cursor: pointer;
+      font-weight: bold;
+      transition: .2s ease-in-out;
+      color: mintcream;
+    }
+    
+    .txt-mobile button:hover {
+        background-color: #1a4031;
+    }
+    
+    .txt-mobile h5 {
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    
+    .txt-mobile p {
+        margin-bottom: 2rem;
+        color: gray;
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .txt-mobile h2 {
+        font-size: 1.8rem;
+        color: #3a8268;
+        font-weight: bold;
+        font-family: "Simonetta", serif;
+    }
+}
